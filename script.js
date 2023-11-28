@@ -78,3 +78,20 @@ for (let a in bikes) {
   console.log();
 }
 */
+// ---------------------------For of loop------------------------
+/*
+const cars = {
+  lambo: "avantador",
+  bmw: "m4",
+  mercedis: "sls",
+  landcrusor: "range rover",
+  porsche: "gt3r",
+};
+console.log("available cars are ");
+for (let a of cars) {
+  console.log(`${a}: ${cars[a]} `);
+  console.log();
+}
+*/
+
+// ---------------------------While loop------------------------
