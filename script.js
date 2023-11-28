@@ -107,7 +107,7 @@ while(i<n){
 */
 
 // ---------------------------Do While loop------------------------
-
+/*
 let n = prompt("Enter the value of n");
 n = Number.parseInt(n);
 
@@ -116,3 +116,20 @@ do {
   console.log(i);
     i++;
 } while (i < n);
+*/
+
+// -------------------------Functions---------------------------
+
+const students = {
+  faiz: 50,
+  arfaz: 60,
+  faisal: 70,
+  fareen: 80,
+};
+for (let i = 0; i < Object.keys(students).length; i++) {
+  console.log(
+    `marka of ${Object.keys(students)[i]} are ${
+      students[Object.keys(students)[i]]
+    }`
+  );
+}
