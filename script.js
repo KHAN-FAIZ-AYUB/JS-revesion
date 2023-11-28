@@ -84,7 +84,7 @@ const cars = {
   lambo: "avantador",
   bmw: "m4",
   mercedis: "sls",
-  landcrusor: "range rover",
+  landcrusur: "range rover",
   porsche: "gt3r",
 };
 console.log("available cars are ");
@@ -95,3 +95,11 @@ for (let a of cars) {
 */
 
 // ---------------------------While loop------------------------
+let n=prompt('Enter the value of n')
+n=Number.parseInt(n)
+
+let i=0
+while(i<n){
+    console.log(i)
+    i++;
+}
