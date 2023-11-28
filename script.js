@@ -1,5 +1,5 @@
+// ------------------------------if else--------------------------------
 /*
-------------------------------if else--------------------------------
 let age=prompt('Enter your age')
 age=Number.parseInt(age)
 if(age>10 && age<20){
@@ -9,8 +9,8 @@ if(age>10 && age<20){
 }
 */
 
-/*
 // ------------------------------switch case--------------------------------
+/*
 let bike = prompt("Select your dream bike from KTM, BENELI, BMWS1000RR, ZX10R");
 if (bike != "") {
   switch (bike) {
@@ -34,8 +34,8 @@ if (bike != "") {
 }
 */
 
+// ----------------------if else----------------------------
 /*
-// ------------------------------if else--------------------------------
 let num = prompt("please enter the number");
 num = Number.parseInt(num);
 if (num % 2 == 0 && num % 3 == 0) {
@@ -45,7 +45,19 @@ if (num % 2 == 0 && num % 3 == 0) {
 }
 */
 
-// ------------------------------using ternary opp--------------------------------
-
+// --------------------using ternary opp---------------------
+/*
 let age = prompt("Enter your age");
 console.log(age > 18 ? "you can drive the car" : "you can not drive the car");
+*/
+
+// --------------------------For Loop-----------------------------
+
+let sum = 0;
+let n = prompt("Enter the vaue of n");
+n = Number.parseInt(n);
+for (i = 0; i < n; i++) {
+  sum += i + 1;
+  console.log(n);
+}
+console.log("sum of first " + n + " natural number is " + sum);
