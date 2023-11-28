@@ -9,8 +9,8 @@ if(age>10 && age<20){
 }
 */
 
+/*
 // ------------------------------switch case--------------------------------
-
 let bike = prompt("Select your dream bike from KTM, BENELI, BMWS1000RR, ZX10R");
 if (bike != "") {
   switch (bike) {
@@ -32,8 +32,9 @@ if (bike != "") {
 } else {
   alert("please enter your choice");
 }
-/*
-------------------------------if else--------------------------------
+*/
+
+// ------------------------------if else--------------------------------
 let num = prompt("please enter the number");
 num = Number.parseInt(num);
 if (num % 2 == 0 && num % 3 == 0) {
@@ -41,4 +42,4 @@ if (num % 2 == 0 && num % 3 == 0) {
 } else {
   console.log("Number is not divisible by 2 or 3");
 }
-*/
+
