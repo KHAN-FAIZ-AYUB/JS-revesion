@@ -95,6 +95,7 @@ for (let a of cars) {
 */
 
 // ---------------------------While loop------------------------
+/*
 let n=prompt('Enter the value of n')
 n=Number.parseInt(n)
 
@@ -103,3 +104,15 @@ while(i<n){
     console.log(i)
     i++;
 }
+*/
+
+// ---------------------------Do While loop------------------------
+
+let n = prompt("Enter the value of n");
+n = Number.parseInt(n);
+
+let i = 10;
+do {
+  console.log(i);
+    i++;
+} while (i < n);
