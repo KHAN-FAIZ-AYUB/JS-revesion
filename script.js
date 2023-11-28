@@ -34,6 +34,7 @@ if (bike != "") {
 }
 */
 
+/*
 // ------------------------------if else--------------------------------
 let num = prompt("please enter the number");
 num = Number.parseInt(num);
@@ -42,4 +43,9 @@ if (num % 2 == 0 && num % 3 == 0) {
 } else {
   console.log("Number is not divisible by 2 or 3");
 }
+*/
 
+// ------------------------------using ternary opp--------------------------------
+
+let age = prompt("Enter your age");
+console.log(age > 18 ? "you can drive the car" : "you can not drive the car");
