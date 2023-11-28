@@ -52,7 +52,7 @@ console.log(age > 18 ? "you can drive the car" : "you can not drive the car");
 */
 
 // --------------------------For Loop-----------------------------
-
+/*
 let sum = 0;
 let n = prompt("Enter the vaue of n");
 n = Number.parseInt(n);
@@ -61,3 +61,20 @@ for (i = 0; i < n; i++) {
   console.log(n);
 }
 console.log("sum of first " + n + " natural number is " + sum);
+*/
+
+// ---------------------------For in loop------------------------
+/*
+const bikes = {
+  ktm: "rc200",
+  bmw: "s100rr",
+  ninja: "zx10r",
+  beneli: "beneli600i",
+  yamaha: "r1",
+};
+console.log("available bikes are ");
+for (let a in bikes) {
+  console.log(`${a}: ${bikes[a]} `);
+  console.log();
+}
+*/
