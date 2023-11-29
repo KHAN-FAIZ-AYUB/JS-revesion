@@ -118,8 +118,8 @@ do {
 } while (i < n);
 */
 
-// -------------------------Functions---------------------------
-
+// ------------Functions for of loop---------------------------
+/*
 const students = {
   faiz: 50,
   arfaz: 60,
@@ -133,3 +133,10 @@ for (let i = 0; i < Object.keys(students).length; i++) {
     }`
   );
 }
+*/
+// ------------Functions for in loop---------------------------
+
+for (let key in students ){
+    console.log(`marks of ${key} are ${students[key]}`)
+}
+
