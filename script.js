@@ -135,8 +135,17 @@ for (let i = 0; i < Object.keys(students).length; i++) {
 }
 */
 // ------------Functions for in loop---------------------------
-
+/*
 for (let key in students ){
     console.log(`marks of ${key} are ${students[key]}`)
 }
+*/
+//--------------------------------------------------
 
+let cn = 10;
+let i;
+while (i != cn) {
+    i = prompt("Enter a number");
+    console.log("Try again");
+}
+console.log("Number matched");
