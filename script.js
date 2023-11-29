@@ -140,12 +140,19 @@ for (let key in students ){
     console.log(`marks of ${key} are ${students[key]}`)
 }
 */
-//--------------------------------------------------
-
+//---------------while loop-------------------------------
+/*
 let cn = 10;
 let i;
 while (i != cn) {
-    i = prompt("Enter a number");
-    console.log("Try again");
+  i = prompt("Enter a number");
+  console.log("Try again");
 }
 console.log("Number matched");
+*/
+// --------------------find mean of ---------------------
+
+const mean = (a,b,c,d) => {
+  return (a+b+c+d)/4;
+};
+console.log(Math.round(mean(4,5,6,7)))
