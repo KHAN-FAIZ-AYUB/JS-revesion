@@ -178,13 +178,6 @@ for(i=0;i<arr.length;i++){
 }
 */
 
-// -----------------Array using forEach--------------------
-/*
-const bikes = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
-bikes.forEach((element) => {
-  console.log(element);
-});
-*/
 
 // ---------------for & push------------------------
 /*
@@ -203,15 +196,41 @@ const students = {
   faisal: 70,
   fareen: 80,
 };
+
 const studentsKey = Object.keys(students);
 const studenntsValue = Object.values(students);
 const studentsEntries = Object.entries(students);
-console.log(studentsArray);
-*/
-// ------------------------array from--------------------------
+console.log(studentsKey);
+console.log(studenntsValue);
+console.log(studentsEntries);
 
+//-----------------for in loop in Objects------------------- 
+
+for(i in students){
+    console.log(i)
+}
+*/
+
+// ------------------------array from--------------------------
+/*
 const name = "faiz";
 const arr = Array.from(name);
 console.log(arr);
+*/
+// -----------------array of---------------------------
 
-// -------------------------------
+const bikes1 = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
+for (let i of bikes1){
+    console.log(i)
+}
+console.log(bikes1)
+
+console.log('----------------------------------')
+
+// -----------------Array using forEach--------------------
+
+const bikes = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
+bikes.forEach((element, index, arr) => {
+    console.log(`${index} : ${element}`);
+});
+console.log(bikes);
