@@ -165,8 +165,11 @@ for(i=0;i<name.length;i++){
 }
 */
 
-// const name = "khan faiz ayub";
-// console.log(name);
+/*
+const name = "khan faiz ayub";
+for(i=0;i<name.length;i++){
+console.log(name[i]);}
+*/
 // ---------------------array---------------
 /*
 const  arr=[10,20,30,40,50,60,70]
@@ -193,7 +196,7 @@ console.log(arr);
 }
 */
 // -------------------obj keys,value,entrie-------------------------
-
+/*
 const students = {
   faiz: 50,
   arfaz: 60,
@@ -204,5 +207,11 @@ const studentsKey = Object.keys(students);
 const studenntsValue = Object.values(students);
 const studentsEntries = Object.entries(students);
 console.log(studentsArray);
+*/
+// ------------------------array from--------------------------
 
-// ------------------------------------------------------
+const name = "faiz";
+const arr = Array.from(name);
+console.log(arr);
+
+// -------------------------------
