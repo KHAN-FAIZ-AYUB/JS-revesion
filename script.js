@@ -184,12 +184,25 @@ bikes.forEach((element) => {
 */
 
 // ---------------for & push------------------------
-
+/*
 const arr = [];
 for (i = 0; i < 5; i++) {
 const input = prompt("ener items in array");
 arr.push(input);
 console.log(arr);
 }
+*/
+// -------------------obj keys,value,entrie-------------------------
 
-// -------------------
+const students = {
+  faiz: 50,
+  arfaz: 60,
+  faisal: 70,
+  fareen: 80,
+};
+const studentsKey = Object.keys(students);
+const studenntsValue = Object.values(students);
+const studentsEntries = Object.entries(students);
+console.log(studentsArray);
+
+// ------------------------------------------------------
