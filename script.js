@@ -176,14 +176,20 @@ for(i=0;i<arr.length;i++){
 */
 
 // -----------------Array using forEach--------------------
+/*
+const bikes = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
+bikes.forEach((element) => {
+  console.log(element);
+});
+*/
 
-const bikes=['S100rr','ZX10r','600i','lambo','rr']
-bikes.forEach((element)=>{
-    console.log(element)
-})
+// ---------------for & push------------------------
 
-const  arr=[10,20,30,40,50,60,70]
-arr.forEach((element)=>{
-    console.log(element*element)
-})
+const arr = [];
+for (i = 0; i < 5; i++) {
+const input = prompt("ener items in array");
+arr.push(input);
+console.log(arr);
+}
+
 // -------------------
