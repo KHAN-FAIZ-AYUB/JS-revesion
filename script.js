@@ -151,8 +151,39 @@ while (i != cn) {
 console.log("Number matched");
 */
 // --------------------find mean of ---------------------
-
+/*
 const mean = (a,b,c,d) => {
   return (a+b+c+d)/4;
 };
 console.log(Math.round(mean(4,5,6,7)))
+*/
+// --------------------string-------------------------
+/* 
+const name='faiz'
+for(i=0;i<name.length;i++){
+    console.log(name[i])
+}
+*/
+
+// const name = "khan faiz ayub";
+// console.log(name);
+// ---------------------array---------------
+/*
+const  arr=[10,20,30,40,50,60,70]
+for(i=0;i<arr.length;i++){
+    console.log(arr[i])
+}
+*/
+
+// -----------------Array using forEach--------------------
+
+const bikes=['S100rr','ZX10r','600i','lambo','rr']
+bikes.forEach((element)=>{
+    console.log(element)
+})
+
+const  arr=[10,20,30,40,50,60,70]
+arr.forEach((element)=>{
+    console.log(element*element)
+})
+// -------------------
