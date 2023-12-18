@@ -178,7 +178,6 @@ for(i=0;i<arr.length;i++){
 }
 */
 
-
 // ---------------for & push------------------------
 /*
 const arr = [];
@@ -218,19 +217,56 @@ const arr = Array.from(name);
 console.log(arr);
 */
 // -----------------array of---------------------------
-
-const bikes1 = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
-for (let i of bikes1){
-    console.log(i)
+/*
+const bikes12 = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
+for (let items of bikes12){
+    console.log(items)
 }
-console.log(bikes1)
-
-console.log('----------------------------------')
-
+// console.log(bikes1)
+*/
 // -----------------Array using forEach--------------------
-
+/*
 const bikes = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
 bikes.forEach((element, index, arr) => {
     console.log(`${index} : ${element}`);
 });
 console.log(bikes);
+*/
+/*
+const bikes1 = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
+for (let i in bikes1){
+    console.log(i)    
+}
+// console.log(bikes1)
+*/
+// --------------------------MAP--------------------------
+/*
+const arr = [10, 20, 30, 40, 50];
+const newArr = arr.map((element, index, array) => {
+  // console.log(element,index,array)
+  return element + index;
+});
+console.log(newArr);
+console.log(arr);
+
+const cart = [5, 15, 25];
+let total = 0;
+const withTax = cart.map((cost) => {
+  total += cost;
+  return cost * 1.2;
+});
+console.log(withTax); // [6, 18, 30]
+console.log(total); // 45
+*/
+
+const bikes = [
+  { firstname: "BMW", lastname: "1000rr" },
+  { firstname: "Ninja", lastname: "ZX10R" },
+  { firstname: "CBR", lastname: "1000" },
+];
+fullName = bikes.map(getFullName);
+console.log(fullName);
+
+function getFullName(element) {
+  return [element.firstname, element.lastname].join(" ");
+}
