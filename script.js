@@ -242,7 +242,6 @@ const bikes1 = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
 for (let i in bikes1){
     console.log(i)    
 }
-// console.log(bikes1)
 */
 
 // --------------------------MAP--------------------------
@@ -316,4 +315,27 @@ console.log(arr1);
 */
 
 // ----------------------------------------------------------------
+/*
+const arr = [10, 13, 18, 25, 30, 40, 55, 65, 80, 36, 19];
+let result = arr.filter((element)=>{
+  return element % 10 == 0;
+});
+console.log(result);
+*/
 
+
+const arr = [4, 6, 8, 10, 15, 35, 68];
+const result = arr.map((element) => {
+  return Math.round(Math.sqrt(element));
+});
+console.log(result);
+
+const dvivisible = result.filter((element) => {
+  return element % 2 == 0;
+});
+console.log(dvivisible);
+
+const red = dvivisible.reduce((e1, e2) => {
+  return e1 + e2;
+});
+console.log(red);
