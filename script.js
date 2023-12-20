@@ -211,12 +211,15 @@ for(i in students){
 */
 
 // ------------------------array from--------------------------
+
 /*
 const name = "faiz";
 const arr = Array.from(name);
 console.log(arr);
 */
+
 // -----------------array of---------------------------
+
 /*
 const bikes12 = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
 for (let items of bikes12){
@@ -224,7 +227,9 @@ for (let items of bikes12){
 }
 // console.log(bikes1)
 */
+
 // -----------------Array using forEach--------------------
+
 /*
 const bikes = ["S100rr", "ZX10r", "600i", "lambo", "rr"];
 bikes.forEach((element, index, arr) => {
@@ -239,7 +244,9 @@ for (let i in bikes1){
 }
 // console.log(bikes1)
 */
+
 // --------------------------MAP--------------------------
+
 /*
 const arr = [10, 20, 30, 40, 50];
 const newArr = arr.map((element, index, array) => {
@@ -259,14 +266,54 @@ console.log(withTax); // [6, 18, 30]
 console.log(total); // 45
 */
 
+// -------------------------------------------------------------
+
+/*
 const bikes = [
   { firstname: "BMW", lastname: "1000rr" },
   { firstname: "Ninja", lastname: "ZX10R" },
   { firstname: "CBR", lastname: "1000" },
 ];
 fullName = bikes.map(getFullName);
+console.log(bikes);
 console.log(fullName);
 
 function getFullName(element) {
   return [element.firstname, element.lastname].join(" ");
 }
+*/
+
+// ---------------------------------------------------------------
+
+/*
+const bikes1 = ["1000", "1300", "800", "600", "1800", "400", "200"];
+console.log(bikes1);
+
+less = bikes1.filter(lessCc);
+console.log(less);
+function lessCc(element) {
+  return element < 1000;
+}
+*/
+
+// -------------------------------------------------------------------
+
+/*
+const arr = [2, 5, 6, 8, 3];
+const red = arr.reduce(reduce);
+console.log(red)
+function reduce(e1, e2) {
+  return e1 + e2;
+}
+
+let arr1 = [];
+do {
+  a = prompt("Enter Number");
+  a = Number.parseInt(a);
+  arr1.push(a);
+} while (a != 0);
+console.log(arr1);
+*/
+
+// ----------------------------------------------------------------
+
