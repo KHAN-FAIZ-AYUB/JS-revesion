@@ -323,7 +323,7 @@ let result = arr.filter((element)=>{
 console.log(result);
 */
 
-
+/*
 const arr = [4, 6, 8, 10, 15, 35, 68];
 const result = arr.map((element) => {
   return Math.round(Math.sqrt(element));
@@ -339,3 +339,23 @@ const red = dvivisible.reduce((e1, e2) => {
   return e1 + e2;
 });
 console.log(red);
+*/
+
+// ------------------TASK-------------------------
+
+let number = Math.round(Math.random() * 20) + 1;
+console.log(number);
+let guess;
+do {
+  guess = prompt(`Guess the Number`);
+  if (!guess) {
+    console.log(guess, ": please enter value");
+  } else if (guess == number) {
+    console.log(guess, ": Correct guess");
+  } else if (guess > number) {
+    console.log(guess, ": To Heigh");
+  } else {
+    console.log(guess, ": To Low ");
+  }
+} while (+guess !== number);
+console.log("You Win");
