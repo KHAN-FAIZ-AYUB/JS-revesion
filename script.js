@@ -346,10 +346,11 @@ console.log(red);
 let number = Math.round(Math.random() * 20) + 1;
 console.log(number);
 let guess;
-let initialScore=20
+let initialScore = 20;
 do {
   guess = prompt(`Guess the Number`);
-  initialScore--
+  if(guess<=20){
+  initialScore--;
   if (!guess) {
     console.log("please enter value");
   } else if (guess == number) {
@@ -358,13 +359,15 @@ do {
     console.log(guess, ": To Heigh");
   } else {
     console.log(guess, ": To Low ");
+  }}else{
+    console.log("Enter number between 0-20")
   }
 } while (+guess !== number && initialScore > 0);
 
 if (initialScore > 0) {
   console.log("You Win!");
   console.log("Number of guesses: ", 20 - initialScore);
-  console.log("Final score: ", initialScore);
+  console.log("Final score: ", initialScore+1);
 } else {
   console.log("Sorry, you ran out of guesses. The correct number was:", number);
 }
