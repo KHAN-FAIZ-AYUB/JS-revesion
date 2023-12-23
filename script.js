@@ -342,7 +342,7 @@ console.log(red);
 */
 
 // ------------------TASK-------------------------
-
+/*
 let number = Math.round(Math.random() * 20) + 1;
 console.log(number);
 let guess;
@@ -371,3 +371,14 @@ if (initialScore > 0) {
 } else {
   console.log("Sorry, you ran out of guesses. The correct number was:", number);
 }
+*/
+
+// ----------------------------------------------------------
+
+let age = prompt("Plese Enter your age");
+age = Number.parseInt(age);
+
+const check = (age) => {
+  return age >= 18 ? "you can drive" : "you can not drive";
+};
+console.log(check(age));
