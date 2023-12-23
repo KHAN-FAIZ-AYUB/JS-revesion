@@ -378,7 +378,17 @@ if (initialScore > 0) {
 let age = prompt("Plese Enter your age");
 age = Number.parseInt(age);
 
-const check = (age) => {
-  return age >= 18 ? "you can drive" : "you can not drive";
-};
-console.log(check(age));
+// const check = (age) => {
+//   return age >= 18 ? "you can drive" : "you can not drive";
+// };
+// console.log(check(age));
+
+
+function ageCheck(age){
+  if(age>=18){
+    console.log("you can drive")
+  }else{
+    console.log("You can not drive")
+  }
+}
+ageCheck(age)
