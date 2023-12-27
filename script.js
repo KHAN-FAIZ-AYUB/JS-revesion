@@ -343,52 +343,93 @@ console.log(red);
 
 // ------------------TASK-------------------------
 /*
-let number = Math.round(Math.random() * 20) + 1;
-console.log(number);
-let guess;
-let initialScore = 20;
-do {
-  guess = prompt(`Guess the Number`);
-  if(guess<=20){
-  initialScore--;
-  if (!guess) {
-    console.log("please enter value");
-  } else if (guess == number) {
-    console.log(guess, ": Correct guess");
-  } else if (guess > number) {
-    console.log(guess, ": To Heigh");
-  } else {
-    console.log(guess, ": To Low ");
-  }}else{
-    console.log("Enter number between 0-20")
-  }
-} while (+guess !== number && initialScore > 0);
+let playAgain = true;
+while (playAgain) {
+  let number = Math.round(Math.random() * 20) + 1;
+  console.log(number);
+  let guess;
+  let initialScore = 20;
+  do {
+    guess = prompt(`Guess the Number`);
+    if (guess <= 20) {
+      initialScore--;
+      if (!guess) {
+        console.log("please enter value");
+      } else if (guess == number) {
+        console.log(guess, ": Correct guess");
+      } else if (guess > number) {
+        console.log(guess, ": To Heigh");
+      } else {
+        console.log(guess, ": To Low ");
+      }
+    } else {
+      console.error("Enter number between 0-20");
+    }
+  } while (+guess !== number && initialScore > 0);
 
-if (initialScore > 0) {
-  console.log("You Win!");
-  console.log("Number of guesses: ", 20 - initialScore);
-  console.log("Final score: ", initialScore+1);
-} else {
-  console.log("Sorry, you ran out of guesses. The correct number was:", number);
+  if (initialScore > 0) {
+    document.body.style.backgroundColor = "green";
+    console.log("You Win!");
+    console.log("Number of guesses: ", 20 - initialScore);
+    console.log("Final score: ", initialScore + 1);
+  } else {
+    console.log(
+      "Sorry, you ran out of guesses. The correct number was:",
+      number
+    );
+    document.body.style.backgroundColor = "red";
+  }
+  {
+    playAgain = confirm("Do you want to play again");
+  }
 }
+  console.log("Thanks for playing!");
+
+// document.html.style.backgroundColor="green"
+
+//  document.body.style.backgroundColor="red"
+// document.getElementById("myDiv").style.backgroundColor = "lightblue";
 */
 
 // ----------------------------------------------------------
-
+/*
 let age = prompt("Plese Enter your age");
 age = Number.parseInt(age);
 
-// const check = (age) => {
-//   return age >= 18 ? "you can drive" : "you can not drive";
-// };
-// console.log(check(age));
+// -----------------One line function------------------------
 
+const check = (age) => {
+  return age >= 18 ? "you can drive" : "you can not drive";
+};
+console.log(check(age));
 
-function ageCheck(age){
-  if(age>=18){
-    console.log("you can drive")
-  }else{
-    console.log("You can not drive")
+// ----------------------Normal function---------------------
+
+function ageCheck(age) {
+  if (age >= 18) {
+    console.log("you can drive");
+  } else {
+    console.log("You can not drive");
   }
 }
-ageCheck(age)
+ageCheck(age);
+*/
+
+// -----------------------DOM--------------------------------
+//            MATCHES,CLOSEST and CONTAINS
+/*
+let id1 = document.getElementById(".id1");
+let sp1=document.getElementById(".sp1")
+console.log(id1);
+console.log(id1.matches(".id1"));
+console.log(id1.matches(".box"));
+console.log(sp1.closest(".sp1"));
+console.log(sp1.contains(".sp1"));
+*/
+// ---------------------VIDEO 38---------------------------
+
+let demo = (document.getElementsByTagName(
+  "nav"
+)[0].firstElementChild.style.color = "yellow");
+
+console.log(demo);
