@@ -16,11 +16,12 @@ body {
 
 nav {
   display: flex;
-  background-color: black;
+  background-color: whitesmoke;
 }
 
 nav li {
   list-style: none;
   padding: 0 23px;
 color: white;
+background-color: black;
 }

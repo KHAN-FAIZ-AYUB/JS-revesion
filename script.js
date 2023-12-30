@@ -428,8 +428,20 @@ console.log(sp1.contains(".sp1"));
 */
 // ---------------------VIDEO 38---------------------------
 
-let demo = (document.getElementsByTagName(
-  "nav"
-)[0].firstElementChild.style.color = "yellow");
+// document.getElementsByTagName("nav")[0].firstElementChild.style.color =
+//   "black";
+// document.getElementsByTagName("nav")[0].lastElementChild.style.color =
+//   "black";
 
-console.log(demo);
+//   Array.from(document.querySelectorAll("li")).forEach((element)=>{
+//   element.style.backgroundColor="red"})
+
+// ---------------------VIDEO 41---------------------------
+
+let x = document.getElementsByTagName("span")[0];
+console.log(x);
+let y = document.getElementsByTagName("span")[0];
+console.dir(y);
+
+console.log(document.body.firstChild.nodeName);
+console.log(document.body.firstElementChild.nodeName);
