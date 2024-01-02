@@ -477,6 +477,14 @@ console.log(f);
 
 first.setAttribute("class", "abc xyz ");
 
+first.setAttribute("data-game", "road-rash");
+first.setAttribute("data-player", "khan-rider");
+
 //                        removeAttribute
 
 first.removeAttribute("class", "xyz");
+
+//                        dataAttribute
+
+console.log(first.dataset);
+console.log(first.dataset.player);
