@@ -488,3 +488,4 @@ first.removeAttribute("class", "xyz");
 
 console.log(first.dataset);
 console.log(first.dataset.player);
+console.log(first.dataset.game);
