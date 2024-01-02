@@ -459,3 +459,11 @@ console.log(a);
 let b = first.getAttribute("id");
 console.log(b);
 
+//                        hasAttribute
+
+let c = first.hasAttribute("class");
+console.log(c);
+
+let d = first.hasAttribute("style");
+console.log(d);
+
