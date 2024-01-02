@@ -467,3 +467,11 @@ console.log(c);
 let d = first.hasAttribute("style");
 console.log(d);
 
+//                        setAttribute
+
+let e = first.setAttribute("hidden", "false");
+console.log(e);
+
+let f = first.hasAttribute("hidden");
+console.log(f);
+
