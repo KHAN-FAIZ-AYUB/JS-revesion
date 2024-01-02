@@ -477,3 +477,6 @@ console.log(f);
 
 first.setAttribute("class", "abc xyz ");
 
+//                        removeAttribute
+
+first.removeAttribute("class", "xyz");
