@@ -437,7 +437,7 @@ console.log(sp1.contains(".sp1"));
 //   element.style.backgroundColor="red"})
 
 // ---------------------VIDEO 41---------------------------
-
+/*
 let x = document.getElementsByTagName("span")[0];
 console.log(x);
 let y = document.getElementsByTagName("span")[0];
@@ -445,3 +445,17 @@ console.dir(y);
 
 console.log(document.body.firstChild.nodeName);
 console.log(document.body.firstElementChild.nodeName);
+*/
+
+// ---------------------VIDEO 42--------------------------
+
+let first = document.getElementById("first");
+
+//                        getAttribute
+
+let a = first.getAttribute("class");
+console.log(a);
+
+let b = first.getAttribute("id");
+console.log(b);
+
