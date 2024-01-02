@@ -475,3 +475,5 @@ console.log(e);
 let f = first.hasAttribute("hidden");
 console.log(f);
 
+first.setAttribute("class", "abc xyz ");
+
