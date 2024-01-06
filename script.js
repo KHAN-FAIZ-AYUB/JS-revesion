@@ -506,3 +506,7 @@ a.replaceWith(div);
 */
 
 // ---------------------VIDEO 44--------------------------
+
+let first = getElementById("clip44");
+
+first.insertAdjacentHTML("beforeend", '<div class="test">beforeend</div>');
