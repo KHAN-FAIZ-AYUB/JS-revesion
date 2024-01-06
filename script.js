@@ -492,7 +492,7 @@ console.log(first.dataset.game);
 */
 
 // ---------------------VIDEO 43--------------------------
-
+/*
 let a = document.getElementsByTagName("div")[0];
 // a.innerHTML = a.innerHTML + "<h1>Hello World</h1>";
 
@@ -503,3 +503,6 @@ div.innerHTML = "<h2>HEY</h2>";
 // a.before(div);
 // a.after(div);
 a.replaceWith(div);
+*/
+
+// ---------------------VIDEO 44--------------------------
