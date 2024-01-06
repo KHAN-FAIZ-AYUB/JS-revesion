@@ -448,7 +448,7 @@ console.log(document.body.firstElementChild.nodeName);
 */
 
 // ---------------------VIDEO 42--------------------------
-
+/*
 let first = document.getElementById("first");
 
 //                        getAttribute
@@ -489,3 +489,13 @@ first.removeAttribute("class", "xyz");
 console.log(first.dataset);
 console.log(first.dataset.player);
 console.log(first.dataset.game);
+*/
+
+// ---------------------VIDEO 43--------------------------
+
+let a = document.getElementsByTagName("div")[0];
+a.innerHTML = a.innerHTML + "<h1>Hello World</h1>";
+
+let div = document.createElement("div");
+div.innerHTML = '<h2>HEY</h2>';
+a.appendChild(div) 
