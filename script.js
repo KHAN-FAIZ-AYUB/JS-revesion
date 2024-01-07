@@ -519,3 +519,6 @@ first.remove();
 
 // ---------------------VIDEO 45--------------------------
 
+let clip45 = document.getElementsByTagName("div");
+
+clip45.className = "text-red green";
