@@ -529,5 +529,16 @@ clip45.classList.toggle("orange");
 */
 
 // ---------------------VIDEO 46--------------------------
+// -------------SETTIME OUT & SETTIME INTERVAL--------------
 
+// document.write("HEY");
 
+let a = setTimeout(function () {
+  alert("you ran out of time");
+}, 4000);
+
+let b = prompt("Do you want to run the settimeout?");
+if (b === "no") {
+  clearTimeout(a);
+}
+console.log(a);
