@@ -511,3 +511,4 @@ let first = document.getElementById("clip44");
 
 first.insertAdjacentHTML("beforeend", '<div class="test">BEFOREEND</div>');
 first.insertAdjacentHTML("beforebegin", '<div class="test">BEFOREBEGIN</div>');
+first.insertAdjacentHTML("afterbegin", '<div class="test">AFTERBEGIN</div>');
