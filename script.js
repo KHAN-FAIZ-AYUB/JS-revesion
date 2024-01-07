@@ -513,3 +513,4 @@ first.insertAdjacentHTML("beforeend", '<div class="test">BEFOREEND</div>');
 first.insertAdjacentHTML("beforebegin", '<div class="test">BEFOREBEGIN</div>');
 first.insertAdjacentHTML("afterbegin", '<div class="test">AFTERBEGIN</div>');
 first.insertAdjacentHTML("afterend", '<div class="test">AFTEREND</div>');
+first.remove();
