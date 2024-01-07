@@ -509,4 +509,5 @@ a.replaceWith(div);
 
 let first = document.getElementById("clip44");
 
-first.insertAdjacentHTML("beforeend", '<div class="test">beforeend</div>');
+first.insertAdjacentHTML("beforeend", '<div class="test">BEFOREEND</div>');
+first.insertAdjacentHTML("beforebegin", '<div class="test">BEFOREBEGIN</div>');
