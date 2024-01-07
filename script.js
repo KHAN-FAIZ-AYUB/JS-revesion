@@ -518,7 +518,7 @@ first.remove();
 */
 
 // ---------------------VIDEO 45--------------------------
-
+/*
 let clip45 = document.getElementById("clip45");
 
 clip45.className = "text-red green";
@@ -526,6 +526,8 @@ clip45.classList.add("orange");
 clip45.classList.remove("orange");
 clip45.classList.contains("orange");
 clip45.classList.toggle("orange");
+*/
 
+// ---------------------VIDEO 46--------------------------
 
 
