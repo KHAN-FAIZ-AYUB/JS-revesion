@@ -525,5 +525,6 @@ clip45.className = "text-red green";
 clip45.classList.append("orange");
 clip45.classList.add("orange");
 clip45.classList.remove("orange");
+clip45.classList.contains("orange");
 
 
