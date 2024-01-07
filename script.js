@@ -524,4 +524,6 @@ let clip45 = document.getElementsByTagName("div");
 clip45.className = "text-red green";
 clip45.classList.append("orange");
 clip45.classList.add("orange");
+clip45.classList.remove("orange");
+
 
