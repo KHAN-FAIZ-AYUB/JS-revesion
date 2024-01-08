@@ -592,7 +592,8 @@ a.onclick = () => {
 */
 
 // ---------------------VIDEO 48--------------------------
-let btn = document.getElementById("btn");
+
+// let btn = document.getElementById("btn");
 
 /*
 btn.addEventListener("click", function (e) {
@@ -618,9 +619,13 @@ if (input == "hello") {
 }
 */
 
+/*
 let a = function (e) {
   console.log(e.target);
   console.log(e.type);
   console.log(e.clientX, e.clientY);
 };
 btn.addEventListener("click", a);
+*/
+
+// ---------------------VIDEO 49--------------------------
