@@ -584,3 +584,8 @@ const intervalId = setInterval(printNumber, 2000);
 */
 
 // ---------------------VIDEO 47--------------------------
+
+let a = document.getElementsByClassName("container")[0];
+a.onclick = () => {
+  alert("you click on container");
+};
