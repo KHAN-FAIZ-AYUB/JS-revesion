@@ -37,6 +37,17 @@ nav li {
   color: black;
 }
 
-.text-white{
+.text-white {
   color: white;
+}
+
+.bulb {
+  height: 350px;
+  width: 350px;
+  background-color: red;
+}
+
+.bulb-container {
+  height: 350px;
+  width: 350px;
 }
