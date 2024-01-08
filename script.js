@@ -532,7 +532,7 @@ clip45.classList.toggle("orange");
 // -------------SETTIME OUT & SETTIME INTERVAL--------------
 
 // document.write("HEY");
-
+/*
 let a = setTimeout(function () {
   alert("you ran out of time");
 }, 4000);
@@ -542,3 +542,23 @@ if (b === "no") {
   clearTimeout(a);
 }
 console.log(a);
+*/
+
+// const sum = (a, b) => {
+//   console.log("Yes i am running" + (a + b));
+//   a + b;
+// };
+// let timerId = setTimeout(sum, 2000, 1, 4);
+
+// console.log(timerId);
+
+let timerId1 = setTimeout(function () {
+  alert("out of time");
+}, 2000);
+clearTimeout(timerId1);
+
+// ------------SETINTERVAL---------------
+
+setInterval(function () {
+  alert("setinterval is running on ever 03:00:00 sec");
+}, 3000);
