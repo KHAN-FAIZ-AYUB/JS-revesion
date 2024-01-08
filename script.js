@@ -564,9 +564,8 @@ let setInt = setInterval(function () {
   alert("setinterval is running on ever 03:00:00 sec");
 }, 3000);
 console.log(setInt);
-*/
 // setInterval(function(){
-// for(let i=0;i<=10;i++)
+  // for(let i=0;i<=10;i++)
 // },2000);
 //   console.log(i)
 
@@ -582,3 +581,6 @@ function printNumber() {
 }
 
 const intervalId = setInterval(printNumber, 2000);
+*/
+
+// ---------------------VIDEO 47--------------------------
