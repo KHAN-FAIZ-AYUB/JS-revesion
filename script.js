@@ -542,7 +542,7 @@ if (b === "no") {
   clearTimeout(a);
 }
 console.log(a);
-*/
+
 
 // const sum = (a, b) => {
 //   console.log("Yes i am running" + (a + b));
@@ -556,9 +556,29 @@ let timerId1 = setTimeout(function () {
   alert("out of time");
 }, 2000);
 clearTimeout(timerId1);
+console.log(timerId1);
 
 // ------------SETINTERVAL---------------
 
-setInterval(function () {
+let setInt = setInterval(function () {
   alert("setinterval is running on ever 03:00:00 sec");
 }, 3000);
+console.log(setInt);
+*/
+// setInterval(function(){
+// for(let i=0;i<=10;i++)
+// },2000);
+//   console.log(i)
+
+let count = 1;
+
+function printNumber() {
+  console.log(count);
+  count++;
+
+  if (count > 10) {
+    clearInterval(intervalId);
+  }
+}
+
+const intervalId = setInterval(printNumber, 2000);
