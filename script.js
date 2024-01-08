@@ -663,6 +663,11 @@ setInterval(async function () {
 }, 3000);
 */
 
+// ---------GLOWIG BULB---------------
+/*
 setInterval(async function () {
   document.querySelector("#bulb").classList.toggle("bulb");
 }, 100);
+*/
+
+// ---------------------VIDEO 50--------------------------
