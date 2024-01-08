@@ -588,7 +588,39 @@ const intervalId = setInterval(printNumber, 2000);
 let a = document.getElementsByClassName("container")[0];
 a.onclick = () => {
   alert("you click on container");
-};
+};s
 */
 
 // ---------------------VIDEO 48--------------------------
+let btn = document.getElementById("btn");
+
+/*
+btn.addEventListener("click", function (e) {
+  alert("hey you clicked on button");
+});
+*/
+
+/*
+let x = function (e) {
+  alert("hello!");
+};
+
+let y = function (e) {
+  alert("hey!");
+};
+btn.addEventListener("click", x);
+btn.addEventListener("click", y);
+
+let input = prompt("Enter hello");
+
+if (input == "hello") {
+  btn.removeEventListener("click", y);
+}
+*/
+
+let a = function (e) {
+  console.log(e.target);
+  console.log(e.type);
+  console.log(e.clientX, e.clientY);
+};
+btn.addEventListener("click", a);
