@@ -674,11 +674,20 @@ setInterval(async function () {
 
 // ---------------------VIDEO 51--------------------------
 // --------------------Syncronous-------------------------
-
+/*
 let name = prompt("What is your name");
 let age = prompt("What is your age");
 let bike = prompt("Which is your favourate bike");
 let car = prompt("Which is your favourate car");
 console.log(
-  `${name}  is ${age}  years old and his fav bike is ${bike} aNd his fav car is ${car}`
-);
+  `${name} is ${age} years old and his fav bike is ${bike} aNd his fav car is ${car}`
+  );
+  */
+
+  // --------------------Asyncronous-------------------------
+
+  console.log("START")
+  setInterval(function(){
+    console.log('Asyncronou delay')
+  },3000)
+console.log("END")
