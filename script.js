@@ -684,10 +684,40 @@ console.log(
   );
   */
 
-  // --------------------Asyncronous-------------------------
-
+// --------------------Asyncronous-------------------------
+/*
   console.log("START")
-  setInterval(function(){
+  setTimeout(function(){
     console.log('Asyncronou delay')
   },3000)
-console.log("END")
+  console.log("END")
+*/
+
+// ---------------------VIDEO 52--------------------------
+// --------------------call back function-------------------------
+/*
+function loadScript(src, callback) {
+  var script = document.createElement("script");
+  script.src = src;
+  script.onload = function () {
+    console.log("Loaded script with SRC:" + src);
+    callback(null, src);
+  };
+  script.onerror = function () {
+    console.log("Error loading script with SRC: " + src);
+    callback(new Error("Src got some error"));
+  };
+  document.body.appendChild(script);
+}
+function hello(error, src) {
+  alert("hello " + src);
+}
+
+function hey(src) {
+  alert("Hey " + src);
+}
+loadScript(
+  "https://gist.github.com/adriancmiranda/d3771de4768f841a8e3f",
+  hello
+);
+*/
