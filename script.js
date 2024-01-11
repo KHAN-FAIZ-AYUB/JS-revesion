@@ -857,7 +857,7 @@ p1.then((value) => {
 
 // ---------------------VIDEO 57--------------------------
 // __________________MULTIPLE HANDLERS__________________
-
+/*
 let p1 = new Promise((resolve, reject) => {
   // alert("Promise is not resolved");
   setTimeout(() => {
@@ -881,3 +881,7 @@ p1.then(() => {
       console.log("got some error");
     });
 });
+*/
+
+// ---------------------VIDEO 58--------------------------
+// __________________PROMISE API__________________
