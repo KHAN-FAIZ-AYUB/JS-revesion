@@ -734,3 +734,18 @@ loadScript(
 // same as video 53 but  made it as PYRAMID of DOOM
 
 // ---------------------VIDEO 54--------------------------
+// ---------------------Promises-------------------------
+
+let promise = new Promise(function (resolve, reject) {
+  alert("promise loaded");
+  resolve(404);
+});
+
+console.log("Hii!");
+setTimeout(function () {
+  console.log("Hello!!");
+}, 3000);
+console.log("How are you");
+
+console.log("My name is promise");
+console.log(promise);
