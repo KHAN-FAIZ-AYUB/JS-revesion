@@ -752,3 +752,30 @@ console.log(promise);
 */
 
 // ---------------------VIDEO 55--------------------------
+
+let p1 = new Promise((resolve, reject) => {
+  console.log("Promise 1 is pending");
+  setTimeout(() => {
+    console.log("I am promise 1 and i am resolved");
+    resolve(true);
+  }, 5000);
+});
+console.log(p1);
+
+let p2 = new Promise((resolve, reject) => {
+  console.log("Promise 2 is pending");
+  setTimeout(() => {
+    console.log("I am promise 2 and i am rejected");
+    reject(new Error("I am error from promise"));
+  }, 5000);
+});
+
+console.log(p2);
+
+p1.then((value) => {
+  console.log(value);
+});
+
+p2.catch(() => {
+  console.log("Some error occured in promise 2");
+});
