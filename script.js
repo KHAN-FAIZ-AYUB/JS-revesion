@@ -795,3 +795,30 @@ p2.then(
 */
 
 // ---------------------VIDEO 56--------------------------
+// __________________PROMISE CHAINING__________________
+
+let p1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    console.log("Promise resolved after 2 sceonds");
+    resolve("We have completed Step 1");
+  }, 2000);
+});
+
+p1.then((value) => {
+  console.log(value);
+  let p2 = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("We have completed our Step 2");
+    }, 2000);
+  });
+  return p2;
+})
+  .then((value) => {
+    console.log(value);
+  })
+  .then(() => {
+    console.log("We have completed our Step 3");
+  })
+  .then(() => {
+    console.log("succesfully registered");
+  });
