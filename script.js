@@ -735,7 +735,7 @@ loadScript(
 
 // ---------------------VIDEO 54--------------------------
 // ---------------------Promises-------------------------
-
+/*
 let promise = new Promise(function (resolve, reject) {
   alert("promise loaded");
   resolve(404);
@@ -749,3 +749,6 @@ console.log("How are you");
 
 console.log("My name is promise");
 console.log(promise);
+*/
+
+// ---------------------VIDEO 55--------------------------
