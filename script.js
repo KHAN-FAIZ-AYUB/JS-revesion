@@ -766,16 +766,29 @@ let p2 = new Promise((resolve, reject) => {
   console.log("Promise 2 is pending");
   setTimeout(() => {
     console.log("I am promise 2 and i am rejected");
-    reject(new Error("I am error from promise"));
+    reject(new Error("I am error from promise 2"));
   }, 5000);
 });
 
 console.log(p2);
 
+// To return the value
 p1.then((value) => {
   console.log(value);
 });
 
-p2.catch(() => {
-  console.log("Some error occured in promise 2");
-});
+// To catch error
+// p2.catch(() => {
+//   console.log("Some error occured in promise 2");
+// });
+
+// 2 way of writing then and catch in same block
+
+p2.then(
+  (value) => {
+    console.log(value);
+  },
+  (error) => {
+    console.log(error);
+  }
+);
