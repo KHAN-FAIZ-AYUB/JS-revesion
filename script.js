@@ -700,7 +700,7 @@ function loadScript(src, callback) {
   var script = document.createElement("script");
   script.src = src;
   script.onload = function () {
-    console.log("Loaded script with SRC:" + src);
+    console.log("Loaded script with SRC: " + src);
     callback(null, src);
   };
   script.onerror = function () {
@@ -710,16 +710,27 @@ function loadScript(src, callback) {
   document.body.appendChild(script);
 }
 function hello(error, src) {
+  if (error) {
+    console.log("error");
+    return;
+  }
   alert("hello " + src);
 }
 
-function hey(src) {
-  alert("Hey " + src);
-}
 loadScript(
   "https://gist.github.com/adriancmiranda/d3771de4768f841a8e3f",
-  hello
+  function hey(error, src) {
+    if (error) {
+      console.log(error);
+      sendEmergancyMessageToCeo();
+      return;
+    }
+    alert("Hey " + src);
+  }
 );
 */
 
 // ---------------------VIDEO 53--------------------------
+// same as video 53 but  made it as PYRAMID of DOOM
+
+// ---------------------VIDEO 54--------------------------
