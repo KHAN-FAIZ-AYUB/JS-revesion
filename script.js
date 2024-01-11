@@ -752,7 +752,7 @@ console.log(promise);
 */
 
 // ---------------------VIDEO 55--------------------------
-
+/*
 let p1 = new Promise((resolve, reject) => {
   console.log("Promise 1 is pending");
   setTimeout(() => {
@@ -792,3 +792,6 @@ p2.then(
     console.log(error);
   }
 );
+*/
+
+// ---------------------VIDEO 56--------------------------
