@@ -917,7 +917,8 @@ let p3 = new Promise((resolve, reject) => {
 //   console.log(value);
 // });
 
-let promise_all = Promise.all([p1, p2, p2]);
+// let promise_all = Promise.all([p1, p2, p2]);
+let promise_all = Promise.allSettled([p1, p2, p3]);
 promise_all
   .then((value) => {
     console.log(value);
