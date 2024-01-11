@@ -885,7 +885,7 @@ p1.then(() => {
 
 // ---------------------VIDEO 58--------------------------
 // __________________PROMISE API__________________
-
+/*
 let p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve("value 1");
@@ -929,3 +929,7 @@ promise_all.then((value) => {
 // .catch((error) => {
 //   console.log(error);
 // });
+*/
+
+// ---------------------VIDEO 59--------------------------
+// __________________ASYNC AWAIT__________________
