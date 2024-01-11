@@ -921,7 +921,8 @@ let p3 = new Promise((resolve, reject) => {
 // let promise_all = Promise.allSettled([p1, p2, p3]);
 // let promise_all = Promise.race([p1, p2, p3]);
 // let promise_all = Promise.any([p1, p2, p3]);
-let promise_all = Promise.resolve([p1, p2, p3]);
+// let promise_all = Promise.resolve([p1, p2, p3]);
+let promise_all = Promise.reject([p1, p2, p3]);
 promise_all.then((value) => {
   console.log(value);
 });
