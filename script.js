@@ -796,7 +796,7 @@ p2.then(
 
 // ---------------------VIDEO 56--------------------------
 // __________________PROMISE CHAINING__________________
-
+/*
 let p1 = new Promise((resolve, reject) => {
   setTimeout(() => {
     console.log("Promise resolved after 2 sceonds");
@@ -821,4 +821,34 @@ p1.then((value) => {
   })
   .then(() => {
     console.log("succesfully registered");
+  });
+*/
+
+// __________Load script in promise chaining_________
+let script = document.getElementById("clip56");
+
+const loadScript = (src) => {
+  return new Promise((resolve, reject) => {
+    let script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = src;
+    document.body.appendChild(script);
+    script.onload = () => {
+      resolve("First script has been loaded");
+    };
+    script.onerror = () => {
+      reject(0);
+    };
+  });
+};
+let p1 = loadScript("https://code.jquery.com/jquery-3.3.1.slim.min.js");
+p1.then((value) => {
+  console.log(value);
+  return loadScript("https://code.jquery.com/jquery-3.3.1.slim.min.js");
+})
+  .then((value) => {
+    console.log("Scond script is loading");
+  })
+  .catch((error) => {
+    console.log("Sorry we are having proble while loading script");
   });
