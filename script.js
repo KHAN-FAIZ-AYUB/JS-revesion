@@ -825,6 +825,7 @@ p1.then((value) => {
 */
 
 // __________Load script in promise chaining_________
+/*
 let script = document.getElementById("clip56");
 
 const loadScript = (src) => {
@@ -852,3 +853,7 @@ p1.then((value) => {
   .catch((error) => {
     console.log("Sorry we are having proble while loading script");
   });
+*/
+
+// ---------------------VIDEO 57--------------------------
+// __________________MULTIPLE HANDLERS__________________
