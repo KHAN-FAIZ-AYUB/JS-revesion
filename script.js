@@ -857,3 +857,27 @@ p1.then((value) => {
 
 // ---------------------VIDEO 57--------------------------
 // __________________MULTIPLE HANDLERS__________________
+
+let p1 = new Promise((resolve, reject) => {
+  // alert("Promise is not resolved");
+  setTimeout(() => {
+    resolve("0");
+  }, 3000);
+});
+p1.then((value) => {
+  console.log("Congratulation this promise is now resolved");
+});
+p1.then(() => {
+  console.log("successful");
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(4);
+    }, 5000);
+  })
+    .then((value) => {
+      console.log(value);
+    })
+    .catch(() => {
+      console.log("got some error");
+    });
+});
