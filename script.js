@@ -933,3 +933,41 @@ promise_all.then((value) => {
 
 // ---------------------VIDEO 59--------------------------
 // __________________ASYNC AWAIT__________________
+
+async function weatherForcast() {
+  let mumbaiWeather = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("27 Deg");
+    }, 5000);
+  });
+
+  let bangluruWeather = new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("18 Deg");
+    }, 10000);
+  });
+
+  // mumbaiWeather.then(alert);
+  // bangluruWeather.then(alert);
+
+  console.log("Fetching Mumbai Weather please wait...");
+  let bomW = await mumbaiWeather;
+  console.log("featched Mumbai Weather " + bomW);
+
+  console.log("Fetching Banguluru Weather please wait...");
+  let blrW = await bangluruWeather;
+  console.log("featched Banguluru Weather " + blrW);
+
+  return [bomW, blrW];
+}
+
+const climateForcast = async () => {
+  console.log("I am Climate forcast who come after Weather forcast");
+};
+
+const temp = async () => {
+  console.log("Welcome to the Weather forcast");
+  let a = await weatherForcast();
+  let b = await climateForcast();
+};
+temp();
