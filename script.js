@@ -1007,10 +1007,10 @@ setTimeout(() => {
 // ______________ERROR OBJECT & CUSTOM ERRORS____________
 
 try {
-  faiz;
-} catch(error) {
+  // console.log(faiz);
+  throw new ReferenceError("variable faiz not found");
+} catch (error) {
   console.log(error.name);
   console.log(error.message);
   console.log(error.stack);
-
 }
