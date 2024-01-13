@@ -950,13 +950,14 @@ async function weatherForcast() {
   // mumbaiWeather.then(alert);
   // bangluruWeather.then(alert);
 
+
   console.log("Fetching Mumbai Weather please wait...");
   let bomW = await mumbaiWeather;
-  console.log("featched Mumbai Weather " + bomW);
+  console.log("featched Mumbai Weather is " + bomW);
 
   console.log("Fetching Banguluru Weather please wait...");
   let blrW = await bangluruWeather;
-  console.log("featched Banguluru Weather " + blrW);
+  console.log("featched Banguluru Weather is " + blrW);
 
   return [bomW, blrW];
 }
@@ -971,3 +972,6 @@ const temp = async () => {
   let b = await climateForcast();
 };
 temp();
+
+// ---------------------VIDEO 60--------------------------
+// ______________ERROR HANDLING: TRY & CATCH____________
