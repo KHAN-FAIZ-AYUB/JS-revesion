@@ -933,7 +933,7 @@ promise_all.then((value) => {
 
 // ---------------------VIDEO 59--------------------------
 // __________________ASYNC AWAIT__________________
-
+/*
 async function weatherForcast() {
   let mumbaiWeather = new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -949,7 +949,6 @@ async function weatherForcast() {
 
   // mumbaiWeather.then(alert);
   // bangluruWeather.then(alert);
-
 
   console.log("Fetching Mumbai Weather please wait...");
   let bomW = await mumbaiWeather;
@@ -972,6 +971,33 @@ const temp = async () => {
   let b = await climateForcast();
 };
 temp();
+*/
 
 // ---------------------VIDEO 60--------------------------
 // ______________ERROR HANDLING: TRY & CATCH____________
+
+setTimeout(() => {
+  console.log("loading details");
+}, 1000);
+
+try {
+  console.log(xyz);
+} catch (err) {
+  console.log("error" + err);
+}
+
+setTimeout(() => {
+  console.log("It will talke more few sceonds please do not cancel");
+}, 2000);
+
+setTimeout(() => {
+  console.log("User name and password found");
+}, 4000);
+
+setTimeout(() => {
+  console.log("User name : Khan Tech");
+}, 5000);
+
+setTimeout(() => {
+  console.log("Password : 123xyz");
+}, 6000);
