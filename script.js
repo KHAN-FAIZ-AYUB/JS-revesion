@@ -975,7 +975,7 @@ temp();
 
 // ---------------------VIDEO 60--------------------------
 // ______________ERROR HANDLING: TRY & CATCH____________
-
+/*
 setTimeout(() => {
   console.log("loading details");
 }, 1000);
@@ -1001,3 +1001,14 @@ setTimeout(() => {
 setTimeout(() => {
   console.log("Password : 123xyz");
 }, 6000);
+*/
+
+// ---------------------VIDEO 61--------------------------
+// ______________ERROR OBJECT & CUSTOM ERRORS____________
+
+try {
+  faiz;
+} catch(error) {
+  console.log(error.name);
+
+}
