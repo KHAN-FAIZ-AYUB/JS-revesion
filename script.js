@@ -1005,12 +1005,22 @@ setTimeout(() => {
 
 // ---------------------VIDEO 61--------------------------
 // ______________ERROR OBJECT & CUSTOM ERRORS____________
-
+/*
 try {
+  let age = prompt("Enter your age");
+  age = Number.parseInt(age);
+  if (age > 120) {
+    throw new ReferenceError("This is not possible");
+  }
   // console.log(faiz);
-  throw new ReferenceError("variable faiz not found");
+  // throw new ReferenceError("variable faiz not found");
 } catch (error) {
   console.log(error.name);
   console.log(error.message);
   console.log(error.stack);
 }
+console.log("This script is still running");
+*/
+
+// ---------------------VIDEO 62--------------------------
+// _________________THE FINALLY CLAUSE______________
