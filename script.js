@@ -1024,6 +1024,7 @@ console.log("This script is still running");
 
 // ---------------------VIDEO 62--------------------------
 // _________________THE FINALLY CLAUSE______________
+/*
 const f = () => {
   try {
     let a = 0;
@@ -1038,3 +1039,6 @@ const f = () => {
 };
 f();
 console.log("End of function f")
+*/
+// ---------------------VIDEO 63--------------------------
+// _________________PRACTICE SET______________
