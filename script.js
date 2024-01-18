@@ -1024,3 +1024,17 @@ console.log("This script is still running");
 
 // ---------------------VIDEO 62--------------------------
 // _________________THE FINALLY CLAUSE______________
+const f = () => {
+  try {
+    let a = 0;
+    // console.log(program);
+    console.log("Program Executed successfully");
+    return
+  } catch (err) {
+    console.log("Program failed");
+  } finally {
+    console.log("Final block ");
+  }
+};
+f();
+console.log("End of function f")
