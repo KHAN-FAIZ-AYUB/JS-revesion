@@ -1055,12 +1055,23 @@ const loadScript = async (src) => {
 };
 
 // Problem No:1
-
+/*
 let a = loadScript(
   "https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
 );
 a.then((value) => {
   console.log(value);
 });
+*/
+// Problem No:2
 
-
+const main = async () => {
+  console.log(new Date().getMilliseconds());
+  let a = await loadScript(
+    "https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+  );
+  console.log(a);
+  console.log(new Date().getMilliseconds());
+};
+main()
+*/
