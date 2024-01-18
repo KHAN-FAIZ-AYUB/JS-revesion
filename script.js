@@ -1042,3 +1042,25 @@ console.log("End of function f")
 */
 // ---------------------VIDEO 63--------------------------
 // _________________PRACTICE SET______________
+
+const loadScript = async (src) => {
+  return new Promise((resolve, reject) => {
+    let script = document.createElement("script");
+    script.src = src;
+    script.onload = () => {
+      resolve(src + " loaded successfully");
+    };
+    document.head.append(script);
+  });
+};
+
+// Problem No:1
+
+let a = loadScript(
+  "https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+);
+a.then((value) => {
+  console.log(value);
+});
+
+
