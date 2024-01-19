@@ -1064,7 +1064,7 @@ a.then((value) => {
 });
 */
 // Problem No:2
-
+/*
 const main = async () => {
   console.log(new Date().getMilliseconds());
   let a = await loadScript(
@@ -1075,3 +1075,22 @@ const main = async () => {
 };
 main()
 */
+
+// Problem No:3
+let p = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      reject(new Error("Please this is no acceptable"));
+    }, 3000);
+  });
+};
+
+let a = async () => {
+  try {
+    let c = await p();
+    console.log(c);
+  } catch (err) {
+    console.log("This error is been handled");
+  }
+};
+a();
