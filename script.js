@@ -1077,6 +1077,7 @@ main()
 */
 
 // Problem No:3
+/*
 let p = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -1094,3 +1095,48 @@ let a = async () => {
   }
 };
 a();
+*/
+
+// Problem No:4
+
+let p1 = async () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(101);
+    }, 2000);
+  });
+};
+
+let p2 = async () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(202);
+    }, 1000);
+  });
+};
+
+let p3 = async () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(303);
+    }, 3000);
+  });
+};
+
+const run = async () => {
+  console.time("Run")
+  // let a1 = await p1();
+  // console.log(a1);
+  // let a2 = await p2();
+  // console.log(a2);
+  // let a3 = await p3();
+  // console.log(a3);
+
+  let a1 =  p1();
+  let a2 =  p2();
+  let a3 =  p3();
+  let a1a2a3=await Promise.all([a1,a2,a2])
+  console.log(a1a2a3)
+  console.timeEnd("Run")
+};
+run();
