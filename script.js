@@ -1201,7 +1201,7 @@ mainFunc();
 
 // ---------------------VIDEO 68--------------------------
 //_____________________COOKIES IN JS___________________
-
+/*
 console.log(document.cookie);
 document.cookie = "name=faiz123456789";
 document.cookie = "name2=khan123456789";
@@ -1210,3 +1210,13 @@ let key = prompt("Enter your Cookie KEY");
 let value = prompt("Enter your Cookie VALUE");
 document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`;
 console.log(decodeURIComponent(document.cookie));
+*/
+
+// ---------------------VIDEO 69--------------------------
+//________________LOCAL STORAGE IN JS___________________
+
+let key = prompt("Enter key you want to set");
+let value = prompt("Enter value you want to set");
+
+localStorage.setItem(key, value);
+console.log(`The value at ${key} is ${localStorage.getItem(key)}`);
