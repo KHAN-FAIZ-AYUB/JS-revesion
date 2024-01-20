@@ -1168,18 +1168,32 @@ p.then((response) => {
 // ---------------------VIDEO 67--------------------------
 //_____________________FETCH API POST REQUEST___________________
 
-let options = {
-  method: "POST",
-  headers: {
-    "Content-type": "application/json",
-  },
-  body: JSON.stringify({
-    title: "Faiz",
-    body: "Bhai",
-    id: 404,
-  }),
+const ctrateTodo = async (todo) => {
+  let options = {
+    method: "POST",
+    headers: {
+      "Content-type": "application/json",
+    },
+    body: JSON.stringify(todo),
+  };
+
+  let p =await fetch("https://jsonplaceholder.typicode.com/posts", options);
+  let response = await p.json();
+  return response;
+};
+const getTodo = async (id) => {
+  let response = await fetch("https://jsonplaceholder.typicode.com/posts" + id);
+  let r = await response.json();
+  return r;
 };
 
-fetch("https://jsonplaceholder.typicode.com/posts", options)
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+const mainFunc = async () => {
+  let todo = {
+    title: "faiz",
+    body: "khan",
+    userId: 1000,
+  };
+  let todor = await ctrateTodo(todo);
+  console.log(todor);
+};
+mainFunc();
