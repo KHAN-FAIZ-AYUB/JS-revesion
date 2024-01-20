@@ -1042,7 +1042,7 @@ console.log("End of function f")
 */
 // ---------------------VIDEO 63--------------------------
 // _________________PRACTICE SET______________
-
+/*
 const loadScript = async (src) => {
   return new Promise((resolve, reject) => {
     let script = document.createElement("script");
@@ -1053,6 +1053,7 @@ const loadScript = async (src) => {
     document.head.append(script);
   });
 };
+*/
 
 // Problem No:1
 /*
@@ -1097,8 +1098,7 @@ let a = async () => {
 a();
 */
 
-// Problem No:4
-
+/*
 let p1 = async () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -1140,3 +1140,46 @@ const run = async () => {
   console.timeEnd("Run")
 };
 run();
+*/
+
+// ---------------------VIDEO 64--------------------------
+//_________________ EXCERCISE 04 SOLUTION___________________
+
+// Digital Clock
+
+// ---------------------VIDEO 65--------------------------
+//_____________________HACKERMAN___________________
+
+// Assignment to be solved
+
+// ---------------------VIDEO 66--------------------------
+//_____________________FETCH API___________________
+/*
+let p = fetch("https:/goweather.herokuapp.com/weather/ny");
+p.then((response) => {
+  console.log(response.status);
+  console.log(response.ok);
+  return response.json();
+}).then((value) => {
+  console.log(value);
+});
+*/
+
+// ---------------------VIDEO 67--------------------------
+//_____________________FETCH API POST REQUEST___________________
+
+let options = {
+  method: "POST",
+  headers: {
+    "Content-type": "application/json",
+  },
+  body: JSON.stringify({
+    title: "Faiz",
+    body: "Bhai",
+    id: 404,
+  }),
+};
+
+fetch("https://jsonplaceholder.typicode.com/posts", options)
+  .then((response) => response.json())
+  .then((json) => console.log(json));
