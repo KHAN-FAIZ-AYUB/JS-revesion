@@ -1167,7 +1167,7 @@ p.then((response) => {
 
 // ---------------------VIDEO 67--------------------------
 //_____________________FETCH API POST REQUEST___________________
-
+/*
 const ctrateTodo = async (todo) => {
   let options = {
     method: "POST",
@@ -1177,7 +1177,7 @@ const ctrateTodo = async (todo) => {
     body: JSON.stringify(todo),
   };
 
-  let p =await fetch("https://jsonplaceholder.typicode.com/posts", options);
+  let p = await fetch("https://jsonplaceholder.typicode.com/posts", options);
   let response = await p.json();
   return response;
 };
@@ -1197,3 +1197,16 @@ const mainFunc = async () => {
   console.log(todor);
 };
 mainFunc();
+*/
+
+// ---------------------VIDEO 68--------------------------
+//_____________________COOKIES IN JS___________________
+
+console.log(document.cookie);
+document.cookie = "name=faiz123456789";
+document.cookie = "name2=khan123456789";
+document.cookie = "name=faizkhan123456789";
+let key = prompt("Enter your Cookie KEY");
+let value = prompt("Enter your Cookie VALUE");
+document.cookie = `${encodeURIComponent(key)}=${encodeURIComponent(value)}`;
+console.log(decodeURIComponent(document.cookie));
