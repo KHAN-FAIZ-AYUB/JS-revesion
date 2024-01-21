@@ -1214,7 +1214,7 @@ console.log(decodeURIComponent(document.cookie));
 
 // ---------------------VIDEO 69--------------------------
 //________________LOCAL STORAGE IN JS___________________
-
+/*
 let key = prompt("Enter key you want to set");
 let value = prompt("Enter value you want to set");
 
@@ -1226,4 +1226,35 @@ if (key == "red" || key == "blue") {
 }
 if (key == 0) {
   localStorage.clear();
+}
+*/
+
+// ---------------------VIDEO 70--------------------------
+//________________SESSION STORAGE IN JS___________________
+/*
+sessionStorage.getItem("name");
+sessionStorage.clear();
+sessionStorage.removeItem("name");
+sessionStorage.setItem("name", "faiz");
+
+window.onstorage = (e) => {
+  alert("Changed");
+  console.log(e);
+};
+*/
+
+// ---------------------VIDEO 71--------------------------
+//________________CHAPTER 10 PRACTICE SET ___________________
+
+let n = localStorage.getItem("note");
+alert("your note is " + n);
+
+let a = prompt("Enter your note");
+if (a) {
+  localStorage.setItem("note", a);
+}
+let c = confirm("Do you want to delete your note");
+if (c) {
+  localStorage.removeItem("note");
+  alert("Note deleted sucessfully");
 }
