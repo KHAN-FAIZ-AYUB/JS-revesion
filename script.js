@@ -1402,6 +1402,7 @@ faisalForm2.submit();
 faisalForm1.cancel();
 */
 
+/*
 class RailwayForm {
   constructor(givenname, trainno, address) {
     this.name = givenname;
@@ -1436,3 +1437,37 @@ faizForm.preview();
 faizForm.submit();
 faizForm.cancel();
 faizForm.preview();
+*/
+
+// ---------------------VIDEO 78--------------------------
+//_____________INHERITANCE & EXTENDS KEYWORD IN JS________________
+
+class Animal {
+  constructor(name, color) {
+    this.name = name;
+    this.color = color;
+  }
+  run() {
+    console.log(this.name + " is running");
+  }
+  shout() {
+    console.log(this.name + " is Screaming");
+  }
+}
+
+class Monkey extends Animal {
+  eatBanana() {
+    console.log(this.name + " is eating banana");
+  }
+  hide() {
+    console.log(`${this.name} is hiding`);
+  }
+}
+
+let ani = new Animal("JJ", "grey");
+let m = new Monkey("MOMO", "black");
+
+ani.shout();
+m.eatBanana();
+m.hide();
+// ani.hide(); THIS WILL NOT WORK
