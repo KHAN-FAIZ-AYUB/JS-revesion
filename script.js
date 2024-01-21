@@ -1315,7 +1315,7 @@ const showHack = async (mess) => {
 
 // ---------------------VIDEO 75--------------------------
 //_____________PROTYPES & PROTO IN JS________________
-
+/*
 let a = {
   name: "faiz",
   language: "JavaScript",
@@ -1337,3 +1337,34 @@ p.__proto__ = {
 a.__proto__ = p;
 a.run();
 console.log(a.name1);
+*/
+
+// ---------------------VIDEO 76--------------------------
+//_____________CLASSES & OBJECTS IN JS________________
+
+class RailwayForm {
+  submit() {
+    alert(
+      this.name + " : Your Form is Submited for train number " + this.trainno
+    );
+  }
+  cancel() {
+    alert(this.name + " : Form canceld for train number " + this.trainno);
+  }
+  fill(givenname, trainno) {
+    this.name = givenname;
+    this.trainno = trainno;
+  }
+}
+
+let faizForm = new RailwayForm();
+faizForm.fill("faiz", 123456);
+let faisalForm1 = new RailwayForm();
+let faisalForm2 = new RailwayForm();
+faisalForm1.fill("faisal", 654200);
+faisalForm2.fill("faisal", 654789);
+
+faizForm.submit();
+faisalForm1.submit();
+faisalForm2.submit();
+faisalForm1.cancel();
