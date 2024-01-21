@@ -1245,7 +1245,7 @@ window.onstorage = (e) => {
 
 // ---------------------VIDEO 71--------------------------
 //________________CHAPTER 10 PRACTICE SET ___________________
-
+/*
 let n = localStorage.getItem("note");
 alert("your note is " + n);
 
@@ -1258,3 +1258,49 @@ if (c) {
   localStorage.removeItem("note");
   alert("Note deleted sucessfully");
 }
+*/
+// ---------------------VIDEO 72--------------------------
+//________________EXCERCISE 05 SOLUTION___________________
+
+const hack = document.getElementById("hack");
+
+const message = [
+  "Initializing Hack tool...",
+  "Connecting to Facebook...",
+  "Connecting to server 1...",
+  "Connection failed. Retrying...",
+  "Connecting to server 2",
+  "Connected Successfully...",
+  "Username iamharry...",
+  "Trying Brute Force...",
+  "200K passwords tried...",
+  "Match not found",
+  "Another 200K passwords tried...",
+  "Match not found...",
+  "Another 200K passwords tried...",
+  "Match not found...",
+  "Another 200K passwords tried...",
+  "Match found...",
+  "Accessing Account...",
+  "Hack Successful...",
+];
+
+const sleep = async (seconds) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(true);
+    }, seconds * 1000);
+  });
+};
+
+const showHack = async (mess) => {
+  await sleep(2);
+  console.log(mess);
+  text.innerHTML = text.innerHTML + mess + "<br>";
+};
+
+(async () => {
+  for (let i = 0; i < message; i++) {
+    await showHack(message[i]);
+  }
+})();
