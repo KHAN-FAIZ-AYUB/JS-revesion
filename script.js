@@ -1261,7 +1261,7 @@ if (c) {
 */
 // ---------------------VIDEO 72--------------------------
 //________________EXCERCISE 05 SOLUTION___________________
-
+/*
 const hack = document.getElementById("hack");
 
 const message = [
@@ -1304,3 +1304,36 @@ const showHack = async (mess) => {
     await showHack(message[i]);
   }
 })();
+*/
+
+// ---------------------VIDEO 73--------------------------
+//________________EXCERCISE 05 TO DO LIST ___________________
+// to be solved
+
+// ---------------------VIDEO 74--------------------------
+//_____________OBJECT ORIENTED PROGRAMMING IN JS________________
+
+// ---------------------VIDEO 75--------------------------
+//_____________PROTYPES & PROTO IN JS________________
+
+let a = {
+  name: "faiz",
+  language: "JavaScript",
+  run: () => {
+    alert("Self proto");
+  },
+};
+console.log(a);
+
+let p = {
+  run: () => {
+    alert("PROTO");
+  },
+};
+
+p.__proto__ = {
+  name1: "khan",
+};
+a.__proto__ = p;
+a.run();
+console.log(a.name1);
