@@ -1637,3 +1637,14 @@ o.walk();
 
 console.log(o instanceof Human);
 */
+
+// ---------------------VIDEO 84--------------------------
+//_________________EXCERSIE 6 SOLUTION________________
+
+// ---------------------VIDEO 85--------------------------
+//_________________EXCERSIE 7 PASSWORD GENERATOR________________
+// TO BE SOLVED
+
+// ---------------------VIDEO 86--------------------------
+//__________IMMEDIATELY INVOKED FUNCTION EXPRESSIONS________________
+
