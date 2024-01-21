@@ -1555,7 +1555,7 @@ t.walk();
 
 // ---------------------VIDEO 82--------------------------
 //_________________GETTERS, SETTERS & INSTANCE OF IN JS________________
-
+/*
 class Animal {
   constructor(name) {
     this._name = name;
@@ -1576,3 +1576,64 @@ f.name = "lark";
 f.swim();
 console.log(f.name);
 // console.log(f.name);
+*/
+// ---------------------VIDEO 83--------------------------
+//_________________CHAPTER 11 PRACTICE SET ________________
+/*
+class Complex {
+  constructor(real, imaginary) {
+    this.real = real;
+    this.imaginary = imaginary;
+  }
+  add(num) {
+    this.real = this.real + num.real;
+    this.imaginary = this.imaginary + num.imaginary;
+  }
+
+  get real() {
+    return this._real;
+  }
+
+  get imaginary() {
+    return this._imaginarymaginary;
+  }
+
+  set imaginary(newImaginary) {
+    this._imaginary = newImaginary;
+  }
+
+  set real(newReal) {
+    this._real = newReal;
+  }
+}
+
+let a = new Complex(2, 4);
+let b = new Complex(6, 12);
+a.real = 10;
+b.imaginary = 10;
+a.add(b);
+console.log(a.real, a.imaginary);
+*/
+
+/*
+class Human {
+  constructor(name, favfood) {
+    this.name = name;
+    this.favfood = favfood;
+  }
+  walk() {
+    console.log(this.name + "Human is walking");
+  }
+}
+
+class Student extends Human {
+  walk() {
+    console.log(this.name + " Student is walking");
+  }
+}
+
+let o = new Student("faiz", "Chicken");
+o.walk();
+
+console.log(o instanceof Human);
+*/
