@@ -1341,7 +1341,7 @@ console.log(a.name1);
 
 // ---------------------VIDEO 76--------------------------
 //_____________CLASSES & OBJECTS IN JS________________
-
+/*
 class RailwayForm {
   submit() {
     alert(
@@ -1368,3 +1368,71 @@ faizForm.submit();
 faisalForm1.submit();
 faisalForm2.submit();
 faisalForm1.cancel();
+*/
+// ---------------------VIDEO 77--------------------------
+//_____________CONSTRUCTOR IN JS________________
+/*
+class RailwayForm {
+  constructor(givenname, trainno) {
+    this.name = givenname;
+    this.trainno = trainno;
+    console.log("CONSTRUCTOER CALLED ... " + this.name + " " + this.trainno);
+  }
+
+  submit() {
+    alert(
+      this.name + " : Your Form is Submited for train number " + this.trainno
+    );
+  }
+  cancel() {
+    alert(this.name + " : Form canceld for train number " + this.trainno);
+  }
+}
+
+let faizForm = new RailwayForm("faiz", 123456);
+// faizForm.fill("faiz", 123456);
+let faisalForm1 = new RailwayForm("faisal", 654200);
+let faisalForm2 = new RailwayForm("faisal", 654789);
+// faisalForm1.fill("faisal", 654200);
+// faisalForm2.fill("faisal", 654789);
+
+faizForm.submit();
+faisalForm1.submit();
+faisalForm2.submit();
+faisalForm1.cancel();
+*/
+
+class RailwayForm {
+  constructor(givenname, trainno, address) {
+    this.name = givenname;
+    this.trainno = trainno;
+    this.address = address;
+    console.log("CONSTRUCTOER CALLED ... " + this.name + " " + this.trainno);
+  }
+
+  preview() {
+    alert(
+      this.name +
+        " Your form for train " +
+        this.trainno +
+        " and your address is " +
+        this.address
+    );
+  }
+
+  submit() {
+    alert(
+      this.name + " : Your Form is Submited for train number " + this.trainno
+    );
+  }
+  cancel() {
+    alert(this.name + " : Form canceld for train number " + this.trainno);
+    this.trainno = 0;
+  }
+}
+
+let faizForm = new RailwayForm("faiz khan", 1212, "Mumbai maharashtra - 40001");
+faizForm.preview();
+faizForm.submit();
+faizForm.cancel();
+faizForm.preview();
