@@ -1441,7 +1441,7 @@ faizForm.preview();
 
 // ---------------------VIDEO 78--------------------------
 //_____________INHERITANCE & EXTENDS KEYWORD IN JS________________
-
+/*
 class Animal {
   constructor(name, color) {
     this.name = name;
@@ -1471,3 +1471,33 @@ ani.shout();
 m.eatBanana();
 m.hide();
 // ani.hide(); THIS WILL NOT WORK
+*/
+
+// ---------------------VIDEO 79--------------------------
+//_____________METHOD OVER RIDING & SUPER KEYWORD IN JS________________
+
+class Employee {
+  login() {
+    console.log(`Employee has logged In`);
+  }
+  logout() {
+    console.log(`Employee has logged out`);
+  }
+  requestLeaves(leaves) {
+    console.log(`Employee has requested ${leaves} leaves - auto approved`);
+  }
+}
+
+class Programmer extends Employee {
+  requestCoffee(x) {
+    console.log(`Employee has requested ${x} coffees`);
+  }
+  requestLeaves(leaves) {
+    super.requestLeaves(4);
+    console.log(`one extra is granted`);
+  }
+}
+
+let e = new Programmer();
+e.login();
+e.requestLeaves(3);
