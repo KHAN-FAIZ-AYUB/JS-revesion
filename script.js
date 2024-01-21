@@ -1536,7 +1536,7 @@ e.requestLeaves(3);
 
 // ---------------------VIDEO 81--------------------------
 //_________________STATIC METHOD IN JS________________
-
+/*
 class Animal {
   constructor(name) {
     this.name = Animal.capitalize(name);
@@ -1551,3 +1551,28 @@ class Animal {
 
 t = new Animal("tarzan");
 t.walk();
+*/
+
+// ---------------------VIDEO 82--------------------------
+//_________________GETTERS, SETTERS & INSTANCE OF IN JS________________
+
+class Animal {
+  constructor(name) {
+    this._name = name;
+  }
+  swim() {
+    console.log(`${this._name} is swimming`);
+  }
+  get name() {
+    return this._name;
+  }
+  set name(newName) {
+    this._name = newName;
+  }
+}
+
+let f = new Animal("Dragon");
+f.name = "lark";
+f.swim();
+console.log(f.name);
+// console.log(f.name);
