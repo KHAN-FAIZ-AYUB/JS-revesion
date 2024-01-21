@@ -1506,7 +1506,7 @@ e.requestLeaves(3);
 
 // ---------------------VIDEO 80--------------------------
 //_________________CONSTRUCTOR IN JS________________
-
+/*
 class Employee {
   login() {
     console.log(`Employee has logged In`);
@@ -1532,3 +1532,22 @@ class Programmer extends Employee {
 let e = new Programmer();
 e.login();
 e.requestLeaves(3);
+*/
+
+// ---------------------VIDEO 81--------------------------
+//_________________STATIC METHOD IN JS________________
+
+class Animal {
+  constructor(name) {
+    this.name = Animal.capitalize(name);
+  }
+  walk() {
+    console.log(`Animal ${this.name} is walking`);
+  }
+  static capitalize(name) {
+    return name.charAt(0).toUpperCase() + name.substr(1, name.length);
+  }
+}
+
+t = new Animal("tarzan");
+t.walk();
